@@ -36,17 +36,24 @@ let nama = "Bryan", peran = "ksatria";
 
 //code disini gunakan console.log untuk outputnya
 
-if (nama === "") {
-  console.log("nama wajib diisi")
-} else {
-  console.log("Pilih Peranmu untuk memulai game")
-  if (peran.toLowerCase() === "ksatria") {
-    console.log(`halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!`)
-  } else if (peran.toLowerCase() === "Tabib") {
-    console.log(`halo Tabib ${nama} , kamu akan membantu temanmu yang terluka`)
-  }
-}
+let nama = "Bryan";
+let peran = "bot";
 
+if (!nama) {
+  console.log("Nama wajib diisi");
+} else {
+  console.log("Pilih Peranmu untuk memulai game");
+  
+  if (peran.toLowerCase() === "ksatria") {
+    console.log(`Halo Ksatria ${nama}, kamu dapat menyerang dengan senjatamu!`);
+  } else if (peran.toLowerCase() === "tabib") {
+    console.log(`Halo Tabib ${nama}, kamu akan membantu temanmu yang terluka.`);
+  } else if (peran.toLowerCase() === "penyihir") {
+    console.log(`Halo Penyihir ${nama}, ciptakan keajaiban yang membantu kemenanganmu.`);
+  } else {
+    console.log(`Kayaknya kamu ${nama}, kamu jadi bot aja ya, karena pilihanmu gak ada.`);
+  }
+}
 ```
 
 ## Soal 2

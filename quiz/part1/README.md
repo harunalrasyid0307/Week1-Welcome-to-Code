@@ -32,6 +32,20 @@ yak Buka aja W3school dan kerjakan soal soal berikut
 let nama = "", peran = "";
 
 //code disini gunakan console.log untuk outputnya
+let nama = "Bryan", peran = "ksatria";
+
+//code disini gunakan console.log untuk outputnya
+
+if (nama === "") {
+  console.log("nama wajib diisi")
+} else {
+  console.log("Pilih Peranmu untuk memulai game")
+  if (peran.toLowerCase() === "ksatria") {
+    console.log(`halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!`)
+  } else if (peran.toLowerCase() === "Tabib") {
+    console.log(`halo Tabib ${nama} , kamu akan membantu temanmu yang terluka`)
+  }
+}
 
 ```
 
